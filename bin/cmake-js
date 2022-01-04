@@ -11,7 +11,7 @@ var logLevels = ["silly", "verbose", "info", "http", "warn", "error"];
 var npmConfigData = require("rc")("npm");
 for (var key of _.keys(npmConfigData)) {
     if (_.startsWith(key, "cmake_js_")) {
-        var option = key.substr(9);
+        var option = key.substring(9);
         if (option.length === 1) {
             process.argv.push("-" + option);
         }
@@ -28,9 +28,7 @@ console.log(process.argv);
 
 var yargs = require("yargs")
     .usage("CMake.js " + version + "\n\nUsage: $0 [<command>] [options]")
-    .version(function () {
-        return version;
-    })
+    .version(version)
     .command("install", "Install Node.js/io.js distribution files if needed")
     .command("configure", "Configure CMake project")
     .command("print-configure", "Print the configuration command")
