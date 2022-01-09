@@ -1,6 +1,6 @@
 {
   "name": "cmake-js",
-  "description": "CMake.js - a Node.js/io.js native addon build tool",
+  "description": "CMake.js - a Node.js native addon build tool ",
   "license": "MIT",
   "keywords": [
     "native",
@@ -16,37 +16,37 @@
     "boost"
   ],
   "main": "lib",
-  "version": "6.3.0",
-  "author": "Gábor Mező aka unbornchikken",
+  "version": "6.3.1",
+  "author": "k-matsuzawa",
   "repository": {
     "type": "git",
-    "url": "git://github.com/unbornchikken/cmake-js.git"
+    "url": "git://github.com/cryptogarageinc/cmake-js.git"
   },
   "bin": "./bin/cmake-js",
   "engines": {
-    "node": ">= 10.0.0"
+    "node": ">= 12.0.0"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "debug": "^4",
-    "fs-extra": "^5.0.0",
+    "axios": "^0.24.0",
+    "debug": "^4.3.3",
+    "fs-extra": "^10.0.0",
     "is-iojs": "^1.0.1",
     "lodash": "^4",
-    "memory-stream": "0",
-    "npmlog": "^1.2.0",
+    "memory-stream": "^1.0.0",
+    "npmlog": "^6.0.0",
     "rc": "^1.2.7",
-    "semver": "^5.0.3",
-    "splitargs": "0",
-    "tar": "^4",
-    "unzipper": "^0.8.13",
-    "url-join": "0",
-    "which": "^1.0.9",
-    "yargs": "^3.6.0"
+    "semver": "^7.3.5",
+    "splitargs": "^0",
+    "tar": "^6.1.11",
+    "unzipper": "^0.10.11",
+    "url-join": "^4.0.1",
+    "which": "^2.0.2",
+    "yargs": "^17.3.1"
   },
   "devDependencies": {
     "mocha": "*",
-    "nan": "^2.1.0",
-    "natives": "^1.1.6"
+    "nan": "^2.15.0",
+    "v8-natives": "^1.2.5"
   },
   "scripts": {
     "test": "mocha tests"
