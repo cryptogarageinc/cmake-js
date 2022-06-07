@@ -1,3 +1,16 @@
+v6.3.2 - 06/06/22
+==========
+
+- fix: if --runtimeVerison must be explicitly specified if building for a different runtime
+- Update baseurl for electron mirror
+
+v6.3.1 - 05/06/22
+==========
+
+- add missing bluebird dependency
+- fix platform detection for visual studio 2019 and newer
+- fix platform detection for macos
+
 v6.3.0 - 26/11/21
 ==========
 

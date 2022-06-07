@@ -16,7 +16,7 @@
     "boost"
   ],
   "main": "lib",
-  "version": "6.3.1",
+  "version": "6.3.2",
   "author": "k-matsuzawa",
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
+    "bluebird": "^3",
     "debug": "^4.3.3",
     "fs-extra": "^10.0.0",
     "is-iojs": "^1.0.1",
